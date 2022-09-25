@@ -19,7 +19,20 @@ namespace WindowsFormsApp8
 
         private void dataToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form4 form = new Form4();
+            form.Show();
+        }
 
+        private void 도깨비고비ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.Show();
+        }
+
+        private void 드라세나산데리아나ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 form = new Form3();
+            form.Show();
         }
     }
 }

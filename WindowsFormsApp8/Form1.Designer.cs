@@ -76,12 +76,14 @@
             this.도깨비고비ToolStripMenuItem.Name = "도깨비고비ToolStripMenuItem";
             this.도깨비고비ToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
             this.도깨비고비ToolStripMenuItem.Text = "도깨비고비";
+            this.도깨비고비ToolStripMenuItem.Click += new System.EventHandler(this.도깨비고비ToolStripMenuItem_Click);
             // 
             // 드라세나산데리아나ToolStripMenuItem
             // 
             this.드라세나산데리아나ToolStripMenuItem.Name = "드라세나산데리아나ToolStripMenuItem";
             this.드라세나산데리아나ToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
             this.드라세나산데리아나ToolStripMenuItem.Text = "드라세나산데리아나";
+            this.드라세나산데리아나ToolStripMenuItem.Click += new System.EventHandler(this.드라세나산데리아나ToolStripMenuItem_Click);
             // 
             // detailToolStripMenuItem
             // 
@@ -94,7 +96,7 @@
             // dataToolStripMenuItem
             // 
             this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
-            this.dataToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.dataToolStripMenuItem.Size = new System.Drawing.Size(151, 34);
             this.dataToolStripMenuItem.Text = "Data";
             this.dataToolStripMenuItem.Click += new System.EventHandler(this.dataToolStripMenuItem_Click);
             // 

@@ -64,13 +64,27 @@ namespace WindowsFormsApp8
 
         private void Connect_Click(object sender, EventArgs e)
         {
-            Program.xserial Xserial = new Program.xserial(1111);
-            xserial.Close();
+            Program.xserial Xserial = new Program.xserial("1111");
+            Xserial.Open();
+            Connect.Enabled = false;
+            DisConnect.Enabled = true;
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Program.xserial Xserial = new Program.xserial("1111");
+            Xserial.Open();
+            ComboBox cb = sender as ComboBox;
+        }
 
+        private void DisConnect_Click(object sender, EventArgs e)
+        {
+            Program.xserial Xserial = new Program.xserial("1111");
+            Xserial.Close();
+            DisConnect.Enabled = false;
+            Connect.Enabled = true;
+ 
         }
     }
 }

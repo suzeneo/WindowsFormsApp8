@@ -9,6 +9,8 @@ namespace WindowsFormsApp8
 {
     class Program
     {
+        internal static object form1;
+
         /// <summary>
         /// 해당 애플리케이션의 주 진입점입니다.
         /// </summary>
@@ -20,7 +22,7 @@ namespace WindowsFormsApp8
             Application.Run(new Form1());
         }
 
-          class xserial
+          public class xserial
         {
             private SerialPort sPort = null;
             public Int32[] soil = new int[2];
@@ -55,7 +57,8 @@ namespace WindowsFormsApp8
                 }
                 soil[0] = BitConverter.ToInt32(buffer8, 0);
                 soil[1] = BitConverter.ToInt32(buffer8, 4);
-                // Program.form1.BeginInvoke((new Action(delegate { Program.form1.Showvalue(soil); }));
+                
             }
+
         }
 }}
